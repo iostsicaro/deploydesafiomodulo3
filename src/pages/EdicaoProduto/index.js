@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router';
-import { Link } from 'react-router-dom';;
-
 import { useForm } from 'react-hook-form';
-import Alert from '@material-ui/lab/Alert';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
+
 import useAuth from '../../hook/useAuth';
 import { put } from '../../services/ApiClient';
 
@@ -17,6 +16,7 @@ import {
   Backdrop,
   CircularProgress
 } from '@material-ui/core'
+import Alert from '@material-ui/lab/Alert';
 import useStyles from './styles';
 
 
