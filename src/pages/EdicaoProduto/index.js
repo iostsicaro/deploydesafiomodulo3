@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';;
+
+import { useForm } from 'react-hook-form';
+import Alert from '@material-ui/lab/Alert';
+import useAuth from '../../hook/useAuth';
+import { put } from '../../services/ApiClient';
+
 import { 
   Divider, 
   Typography, 
@@ -10,13 +18,7 @@ import {
   CircularProgress
 } from '@material-ui/core'
 import useStyles from './styles';
-import { useHistory } from 'react-router';
-import { Link } from 'react-router-dom';;
 
-import { useForm } from 'react-hook-form';
-import Alert from '@material-ui/lab/Alert';
-import useAuth from '../../hook/useAuth';
-import { put } from '../../services/ApiClient';
 
 function EdicaoProduto() {
   const classes = useStyles();
